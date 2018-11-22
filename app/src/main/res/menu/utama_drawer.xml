@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/beranda"
+            android:icon="@drawable/home"
+            android:title="Beranda" />
+
+    </group>
+
+
+    <item android:title="Informasi">
+        <menu>
+
+            <item
+                android:id="@+id/pembaruan"
+                android:icon="@drawable/pembaruan"
+                android:title="Cek pembaruan"
+                />
+
+            <item
+                android:id="@+id/rating"
+                android:icon="@drawable/bintang"
+                android:title="Beri rating"
+                />
+
+            <item
+                android:id="@+id/aplikasilain"
+                android:icon="@drawable/download"
+                android:title="Aplikasi lain"
+                />
+
+            <item
+                android:id="@+id/bagikan"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Bagikan"
+                />
+
+            <item
+                android:id="@+id/informasi"
+                android:icon="@drawable/informasi"
+                android:title="Tentang aplikasi"
+                />
+        </menu>
+    </item>
+
+</menu>

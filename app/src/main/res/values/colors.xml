@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4caf50</color>
+    <color name="colorPrimaryDark">#388e3c</color>
+    <color name="colorAccent">#388e3c</color>
+
+    <color name="hitam">#333333</color>
+    <color name="putih">#ffffff</color>
+    <color name="abu">#b8eaeaea</color>
+    <color name="orange">#FF9800</color>
+    <color name="hitamtrans">#7d101010</color>
+    <color name="kuning">#eddb4c</color>
+    <color name="transparant">#00ffffff</color>
+
+
+
+</resources>

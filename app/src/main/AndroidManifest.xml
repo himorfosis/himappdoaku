@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.himorfosis.doaku">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- danger permissions -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logodoaku"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logodoaku"
+        android:supportsRtl="true"
+        android:theme="@style/NoActionbar">
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Utama"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PlayDoa"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DaftarDoa"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbar" />
+
+        <receiver android:name=".NotificationPlay">
+            <intent-filter>
+                <action android:name="com.himorfosis.doaku.previous" />
+                <action android:name="com.himorfosis.doaku.delete" />
+                <action android:name="com.himorfosis.doaku.pause" />
+                <action android:name="com.himorfosis.doaku.next" />
+                <action android:name="com.himorfosis.doaku.play" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Favorit"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Riwayat"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".DaftarDoaSecond" />
+
+        <service android:name=".PlayerService" />
+
+        <receiver android:name=".PlayerReceiver" />
+
+        <service android:name=".PlayerServiceSecond" />
+
+        <activity
+            android:name=".DaftarDoaStream"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbar" />
+        <activity
+            android:name=".Pengaturan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Bantuan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".TentangAplikasi"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity android:name=".Jadwal"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">>
+
+        </activity>
+    </application>
+
+</manifest>
